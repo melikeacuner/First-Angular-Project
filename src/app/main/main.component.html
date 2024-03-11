@@ -1,0 +1,12 @@
+<div style="text-align: center; height: 100%;">
+<form (ngSubmit)="onSubmit()">
+    <div style="margin-bottom: 2%;"><label for="name">İsim ve Soyisminizi giriniz:</label></div>
+    <div><input type="text" id="name" name="name" placeholder="İsim ve Soyisim" [(ngModel)]="inputText" required></div>
+    
+    <div style="margin-top: 2%;"><button type="submit" class="btn btn-primary">Gönder</button></div>
+  </form>
+  
+  <div *ngIf="greetingVisible">
+    <h4 style="margin-top: 2% ; color: brown;">Merhaba, {{ userName }}!</h4>
+  </div>
+  </div>
